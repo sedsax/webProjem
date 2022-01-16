@@ -1,0 +1,65 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="MasterPage.master.cs" Inherits="webProjem.MasterPage" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Dilek Feneri</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="/WebForm1.aspx">Anasayfa</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/hakkimda.aspx">Hakkımda</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Kategoriler
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+           <li><a class="dropdown-item" href="/fener.aspx">Fener Kayıt Formu</a></li>
+            <li><a class="dropdown-item" href="/cati.aspx">Çatı Kayıt Formu</a></li>
+              <li><a class="dropdown-item" href="/iletisim.aspx">İletişim</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Sen de Bir Fener' e Çatı Ol!</a></li>
+          </ul>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+    <form id="form1" runat="server">
+        <div class="container">
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <br />
+            <br />
+        </div>
+    </form>
+
+    <footer style="background-color:black; color: white; padding: 40px">
+        <div class="text-center">
+            <h5>...Dilek Feneri...</h5> 
+            <p> <asp:LinkButton ID="LinkButton1" runat="server" PostBackUrl="https://www.losev.org.tr/v6/">LÖSEV</asp:LinkButton></p>
+            <p> Adres: Turgutlu Sokak No: 30 Gaziosmanpaşa / ANKARA </p>
+        </div>
+    </footer>
+</body>
+</html>
