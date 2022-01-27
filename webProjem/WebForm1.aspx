@@ -56,7 +56,7 @@
                             <p>Beyaz bir ışık...</p>
                             <p>Sen onu bulduğunu zannedersin fakat</p>
                             <p>O zaten senin onu bulmanı istemiştir.</p>
-                            <p>O yol göstermek ister sana,</p>
+                            <p>O yol göstermek ister,</p>
                             <p>Sen ise onun sana yol göstermesini istersin.</p>
                             <p>Ne güzel tamamlarsınız birbirinizi...</p>
                             <p>Aydınlatmak isteyen ve aydınlanmak isteyen...</p>
